@@ -9,15 +9,13 @@
 <body>
   <section id="home">
     <header>
-      <!-- <button id="dark-mode-toggle">Toggle Dark Mode</button> -->
-
       <div class="container">
         <div class="logo">SMARTDEV</div>
         <nav id="navbar">
           <a href="#home" class="active">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
-          <a href="#works">Works</a>
+          <a href="#projects">Projects</a>
           <a href="#blogs">Blogs</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -26,13 +24,13 @@
 
     <div class="hero">
       <h3>Hello!</h3>
-      <h1>I am <span>Shuaib qozeem</span></h1>
+      <h1>I am <span>Shuaib Qozeem</span></h1>
       <h2>Full-stack Developer</h2>
       <p>Crafting modern and responsive web experiences.</p>
     </div>
-      <div class="hero-image">
-    <img src="img/me.jpeg" alt="Shuaib Qozeem">
-  </div>
+    <div class="hero-image">
+      <img src="img/me.jpeg" alt="Shuaib Qozeem">
+    </div>
   </section>
 
   <section id="about">
@@ -51,16 +49,36 @@
     </ul>
   </section>
 
-  <section id="works">
-    <h1>My Works</h1>
-    <p>Here are some of my featured projects:</p>
-    <ul>
-      <li>Weather App</li>
-      <li>Portfolio Website</li>
-      <li>qoute website</li>
-      <li>Flashcare pro</li>
-      <li>RoyalMax protection ltd</li>
-    </ul>
+  <!-- ✅ Replaced Old Works Section -->
+  <section id="projects" class="projects-section">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Real-time weather updates with location support.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>This portfolio site you’re viewing right now.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Quote Website</h3>
+        <p>Random motivational quotes with smooth UI.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Flashcare Pro</h3>
+        <p>Healthcare service platform for home users.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>RoyalMax Protection Ltd</h3>
+        <p>Corporate security website for a client.</p>
+        <a href="#" target="_blank">View Project</a>
+      </div>
+    </div>
   </section>
 
   <section id="blogs">
@@ -68,13 +86,20 @@
     <p>Coming soon...</p>
   </section>
 
-  <section id="contact">
-    <h1>Contact Me</h1>
-    <form action="mailto:yourmail@example.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+  <!-- ✅ Replaced Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="mailto:shuaibqozeem123@gmail.com" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
+      <div class="form-group">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
